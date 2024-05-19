@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- <img alt="Vue logo" src="../assets/logo.png" /> -->
-    <TotalProducts />
+    <TotalProducts title="Almoxarifado" />
     <ProductHomeList title="Produtos Novos" />
     <ProductHomeList title="Últimos Alocados" />
     <Footer />

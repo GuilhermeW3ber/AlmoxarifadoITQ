@@ -1,7 +1,7 @@
 <template>
   <div class="app-container">
     <div class="products-container">
-      <h1 id="container-title">Almoxarifado</h1>
+      <h1 id="container-title">{{ title }}</h1>
       <a id="add-button" href=""><i>+</i>Adicionar</a>
       <h1 id="index-number">
         <a href="">21<i>itens</i></a>
@@ -17,6 +17,9 @@
 /* eslint-disable */
 export default {
     name: "TotalProducts",
+    props:{
+        title:String,
+    }
 }
 </script>
     
