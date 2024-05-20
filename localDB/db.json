@@ -1,5 +1,5 @@
 {
-    "ingredientes": {
+    "productInfos": {
       "paes": [
         {
           "id": 1,
@@ -54,14 +54,51 @@
           "tipo": "Tomate"
         },
         {
-          "id": 4,
+          "id": 5,
           "tipo": "Cebola roxa"
         },
         {
-          "id": 4,
+          "id": 6,
           "tipo": "Pepino"
         }
-      ]
+      ],
+      "brands":[
+        {
+          "id": 1,
+          "tipo": "AOC"
+        },
+        {
+          "id": 2,
+          "tipo": "Samsung"
+        },
+        {
+          "id": 3,
+          "tipo": "Lenovo"
+        },
+        {
+          "id": 4,
+          "tipo": "LG"
+        }
+      ],
+      "types":[
+        {
+          "id": 1,
+          "tipo": "Televisão"
+        },
+        {
+          "id": 2,
+          "tipo": "Computador"
+        },
+        {
+          "id": 3,
+          "tipo": "Notebook"
+        },
+        {
+          "id": 4,
+          "tipo": "Projetor"
+        }
+      ],
+      "locations":[]
     },
     "status": [
       {
@@ -101,5 +138,9 @@
         "status": "Solicitado",
         "id": 4
       }
+    ],
+    "models":[
+
     ]
+
   }

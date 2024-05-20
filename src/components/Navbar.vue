@@ -5,6 +5,7 @@
     </div> -->
     <router-link to="/">Home</router-link>
     <router-link to="/product">Estoque</router-link>
+    <router-link to="/addProduct">Add</router-link>
   </div>
 </template>
 
