@@ -281,6 +281,16 @@ a{
   font-size: 14px;
 }
 
+.message-container{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: #cfcfcf;
+  background-color: #181818;
+  padding: 2px 5px;
+  border-radius: 10px;
+}
+
 @media (max-width:1080px){
   #title{
     letter-spacing: 4px;

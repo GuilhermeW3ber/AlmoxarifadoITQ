@@ -1,6 +1,7 @@
 <template>
   <div class="form-container">
     <h1 id="container-title">Cadastro de Produto</h1>
+    <Message :msg="msg" v-show="msg" />
     <form @submit="createProduct">
       <div class="input-container">
         <label for="brand">Marca:</label>
@@ -59,6 +60,7 @@
 
 <script>
 /* eslint-disable */
+import Message from "../Message.vue";
     export default {
         name: "AddForm",
         data(){
@@ -68,7 +70,7 @@
             types:null,
             type:null,
             information:[],
-            mas:null,
+            msg:null,
             models: null,
             locations:null,
           }
@@ -106,13 +108,17 @@
             });
 
             const res = await req.json();
-
             console.log(res);
+
+            this.msg = `Produto ID ${res.id} registrado com socesso!`
 
           }
         },
         mounted(){
           this.getProductInfos();
+        },
+        components:{
+          Message
         }
     }
     </script>

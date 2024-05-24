@@ -93,6 +93,77 @@
       "models": "aa",
       "locations": "aa",
       "status": "Disponível"
+    },
+    {
+      "id": "b95d",
+      "brand": "AOC",
+      "type": "Televisão",
+      "models": "Teste",
+      "locations": "aa",
+      "status": "Disponível"
+    },
+    {
+      "id": "f12e",
+      "brand": "Samsung",
+      "type": "Computador",
+      "models": "a",
+      "locations": "a",
+      "status": "Disponível"
+    },
+    {
+      "id": "90b8",
+      "brand": "Samsung",
+      "type": "Computador",
+      "models": "a",
+      "locations": "a",
+      "status": "Disponível"
+    },
+    {
+      "id": "3407",
+      "brand": null,
+      "type": null,
+      "locations": null,
+      "status": "Disponível"
+    },
+    {
+      "id": "af90",
+      "brand": "Samsung",
+      "type": "Notebook",
+      "models": "Teste",
+      "locations": "aa",
+      "status": "Disponível"
+    },
+    {
+      "id": "4ca4",
+      "brand": "Lenovo",
+      "type": "Televisão",
+      "models": "a",
+      "locations": "aa",
+      "status": "Disponível"
+    },
+    {
+      "id": "28da",
+      "brand": "Samsung",
+      "type": "Computador",
+      "models": "a",
+      "locations": "aa",
+      "status": "Disponível"
+    },
+    {
+      "id": "d90d",
+      "brand": "Samsung",
+      "type": "Computador",
+      "models": "a",
+      "locations": "aa",
+      "status": "Disponível"
+    },
+    {
+      "id": "3066",
+      "brand": "Samsung",
+      "type": "Televisão",
+      "models": "Teste",
+      "locations": "aa",
+      "status": "Disponível"
     }
   ]
 }
