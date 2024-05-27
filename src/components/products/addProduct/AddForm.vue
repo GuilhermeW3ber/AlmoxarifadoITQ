@@ -43,16 +43,19 @@
       </div>
       <div class="input-container">
         <label for="location">Localização:</label>
-        <input
-          type="text"
-          id="locations"
-          name="locations"
-          v-model="locations"
-          placeholder="Localização"
-        />
+        <select name="location" id="location" v-model="location">
+          <option value="">Selecione a Categoria do Produto</option>
+          <option
+            v-for="location in locations"
+            :key="location.id"
+            :value="location.tipo"
+          >
+            {{ location.tipo }}
+          </option>
+        </select>
       </div>
       <div class="input-container">
-        <input type="submit" class="submit-button" value="create" />
+        <input type="submit" class="submit-button" value="Adicionar" />
       </div>
     </form>
   </div>
@@ -73,6 +76,8 @@ import Message from "../Message.vue";
             msg:null,
             models: null,
             locations:null,
+            location:null,
+            serials:null,
           }
         },
         methods:{
@@ -80,9 +85,12 @@ import Message from "../Message.vue";
             const req = await fetch("http://localhost:3000/productInfos")
             const data=await req.json();
 
-            console.log(data);
             this.brands = data.brands;
             this.types = data.types;
+            this.locations = data.locations;
+            this.serials = data.serials;
+
+            console.log(data.products);
           },
 
           async createProduct(e){
@@ -94,7 +102,8 @@ import Message from "../Message.vue";
               brand: this.brand,
               type: this.type,
               models: this.model,
-              locations: this.locations,
+              locations: this.location,
+              serials: this.serial,
               status: "Disponível",
             };
 

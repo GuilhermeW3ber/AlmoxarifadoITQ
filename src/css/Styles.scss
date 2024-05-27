@@ -193,33 +193,83 @@ a{
 }
 
 .collection-item{
-  flex-direction: row;
+  flex-direction:row;
+  flex-wrap: wrap;
   display: flex;
   width: 90vw;
-  margin: 2vw;
+  min-width: 200px;
+  margin: 1vw 2vw;
   padding: 3vw;
   background-color: #181818;
   color: #fff;
-  justify-content: left;
+  justify-content: space-between;
   align-items: center;
+  text-align: center;
   border-radius: 40px;
 }
 
-#colection-title{
+.collection-item select{
+  position: flex;
+  border-radius: 20px;
+  height: 40px;
+  padding: 5px 0px;
+  font-size: 13px;
+  font-style: 500;
+  cursor: pointer;
+  line-height: 1.1;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.delete-btn{
+  border-radius: 20px;
+  height: 10;
+  padding: 5px 16px;
+  font-size: 25px;
+  font-style: 500;
+  cursor: pointer;
+  line-height: 1.1;
+  text-align: center;
+  margin: 0 20px 5px 0;
+  color: #000;
+  border: none;
+}
+
+#collection-title{
   letter-spacing: 4px;
   font-size: 35px;
-  margin-right: 5vw;
+  font-weight: 200;
+  text-transform: capitalize;
+  margin: 0 20px 0 0;
+  text-align: center;
+}
+
+#highlight{
+  font-size: 14px;
+  font-weight: 200;
+  padding: 5px 10px;
+  text-transform: capitalize;
+  text-align: left;
+  justify-content: left;
+  border-radius: 20px;
+  border: #cfcece 1px solid;
+  width: 100px;
+  text-align: center;
 }
 
 #notes{
-  letter-spacing: 2px;
-  font-size: 14px;
-  margin-right: 3vw;
+  font-size: 17px;
+  font-weight: 200;
+  padding: 2px 0;
+  text-transform: capitalize;
+  text-align: left;
+  justify-content: left;
+  margin: 0 10px;
 }
 
 .collection-search input{
-  border-color: #525252;
-  width: 30vw;
+  border: none;
+  width: 90vw;
   margin: 2vw;
   padding: 13px;
   background-color: #525252;
@@ -261,24 +311,44 @@ a{
 .input-container select{
   font-size: 16px;
   font-weight: 200;
-  padding: 2px 20px;
+  padding: 10px 0;
   border-radius: 10px;
+  text-align: center;
+  border: 1px solid #cfcece;
+  background: transparent;
+  background-color: #070707;
+  color: #e9e9e9;
 }
 
 .input-container input{
   font-size: 16px;
   font-weight: 200;
-  padding: 2px 20px;
+  padding: 10px 20px;
   border-radius: 10px;
+  text-align: center;
+  border: 1px solid #cfcece;
+  background: transparent;
+}
+
+.input-container .submit-button{
+  font-size: 16px;
+  font-weight: 200;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-align: center;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  background: #cfcece;
 }
 
 .input-container input::placeholder{
 
-  color: #353535;
+  color: #f0f0f0;
   justify-content: center;
   align-items: center;
   border-radius: 40px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .message-container{
@@ -300,5 +370,56 @@ a{
     color: #fff;
     background: linear-gradient( rgba(43, 43, 43, 0.5), rgb(43, 43, 43, 0.5));
     height: 320px;
+  }
+
+}
+
+@media (max-width:800px){
+  .collection-item{
+    flex-direction:column;
+    width: 80vw;
+    min-width: 200px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px 5.5vw;
+  }
+
+  #collection-title{
+    letter-spacing: 4px;
+    font-size: 35px;
+    margin: 0 0 5px;
+  }
+
+  #highlight{
+    font-size: 14px;
+    font-weight: 200;
+    padding: 5px 10px;
+    margin: 0 5px 10px;
+    text-transform: capitalize;
+    text-align: left;
+    justify-content: left;
+    border-radius: 20px;
+    border: #cfcece 1px solid;
+    width: 200px;
+    text-align: center;
+  }
+
+  .form-container{
+    padding: 12vh 5vw;
+    margin: 0 auto;
+  }
+
+  .collection-search input{
+    width: 80vw;
+  }
+
+  .delete-btn{
+    position: absolute;
+    height: 10;
+    padding: 5px 14px;
+    font-size: 20px;
+    font-style: 500;
+    margin: 0 0 0 -40vw;
   }
 }

@@ -36,8 +36,26 @@
         "tipo": "Projetor"
       }
     ],
+    "serials": [],
     "models": [],
-    "locations": []
+    "locations": [
+      {
+        "id": 1,
+        "tipo": "Templo IEQ"
+      },
+      {
+        "id": 2,
+        "tipo": "Igreja Matriz IEQ"
+      },
+      {
+        "id": 3,
+        "tipo": "Chácara Leão de Judá"
+      },
+      {
+        "id": 4,
+        "tipo": "Chácara Leão de Judá"
+      }
+    ]
   },
   "status": [
     {
@@ -53,116 +71,14 @@
       "tipo": "Em Manutenção"
     }
   ],
-  "burgers": [
-    {
-      "nome": "Matheus Battisti",
-      "carne": "Picanha",
-      "pao": "Italiano Branco",
-      "opcionais": [
-        "Bacon",
-        "Salame",
-        "Cebola roxa"
-      ],
-      "status": "Finalizado",
-      "id": "1"
-    },
-    {
-      "nome": "João Coelho",
-      "carne": "Maminha",
-      "pao": "3 Queijos",
-      "opcionais": [
-        "Salame",
-        "Cebola roxa"
-      ],
-      "status": "Solicitado",
-      "id": "4"
-    }
-  ],
   "products": [
     {
-      "id": "7177",
-      "brand": null,
-      "type": null,
-      "locations": null,
-      "status": "Disponível"
-    },
-    {
-      "id": "a10c",
-      "brand": "AOC",
-      "type": "Computador",
-      "models": "aa",
-      "locations": "aa",
-      "status": "Disponível"
-    },
-    {
-      "id": "b95d",
-      "brand": "AOC",
-      "type": "Televisão",
-      "models": "Teste",
-      "locations": "aa",
-      "status": "Disponível"
-    },
-    {
-      "id": "f12e",
-      "brand": "Samsung",
-      "type": "Computador",
-      "models": "a",
-      "locations": "a",
-      "status": "Disponível"
-    },
-    {
-      "id": "90b8",
-      "brand": "Samsung",
-      "type": "Computador",
-      "models": "a",
-      "locations": "a",
-      "status": "Disponível"
-    },
-    {
-      "id": "3407",
-      "brand": null,
-      "type": null,
-      "locations": null,
-      "status": "Disponível"
-    },
-    {
-      "id": "af90",
-      "brand": "Samsung",
-      "type": "Notebook",
-      "models": "Teste",
-      "locations": "aa",
-      "status": "Disponível"
-    },
-    {
-      "id": "4ca4",
+      "id": "70fd",
       "brand": "Lenovo",
       "type": "Televisão",
-      "models": "a",
-      "locations": "aa",
-      "status": "Disponível"
-    },
-    {
-      "id": "28da",
-      "brand": "Samsung",
-      "type": "Computador",
-      "models": "a",
-      "locations": "aa",
-      "status": "Disponível"
-    },
-    {
-      "id": "d90d",
-      "brand": "Samsung",
-      "type": "Computador",
-      "models": "a",
-      "locations": "aa",
-      "status": "Disponível"
-    },
-    {
-      "id": "3066",
-      "brand": "Samsung",
-      "type": "Televisão",
       "models": "Teste",
-      "locations": "aa",
+      "locations": "Chácara Leão de Judá",
+      "serials": "1845",
       "status": "Disponível"
     }
   ]
